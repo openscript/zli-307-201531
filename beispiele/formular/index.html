@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Erstes Formular</title>
+        <style>
+            form * {
+                display: block;
+            }
+        </style>
+    </head>
+    <body>
+        <form action="auswerten.php" method="POST">
+            <label for='vorname'>Vorname</label>
+            <input type='text' name='vorname' id='vorname' />
+            <label for='nachname'>Nachname</label>
+            <input type='text' name='nachname' id='nachname' />
+            <label for='email'>E-Mail</label>
+            <input type='email' name='email' id='email' />
+            <label for='nachricht'>Nachricht</label>
+            <textarea name='nachricht' id='nachricht'></textarea>
+            <input type='submit' value='Abschicken' />
+        </form>
+    </body>
+</html>
