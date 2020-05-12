@@ -1,0 +1,7 @@
+form > * {
+    display: block;
+}
+
+.error {
+    color: red;
+}
