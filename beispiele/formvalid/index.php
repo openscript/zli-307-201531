@@ -1,4 +1,4 @@
-<?
+<?php
 
 $emailValue = $_POST['email'] ?? '';
 $emailError = false;
