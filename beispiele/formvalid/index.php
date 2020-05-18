@@ -24,6 +24,13 @@ if ($emailValue !== '' && !filter_var($emailValue, FILTER_VALIDATE_EMAIL)) {
             </div>
             <? endif; ?>
             <input id="email" type="email" name="email" value="<?= $emailValue ?>" />
+
+            <? if (isset($_POST['hobby']) && in_array('motorradfahren', $_POST['hobby'])): ?>
+            <input type="checkbox" name="hobby[]" value="motorradfahren" checked />
+            <? else: ?>
+            <input type="checkbox" name="hobby[]" value="motorradfahren" />
+            <? endif; ?>
+
             <input type="submit" value="Absenden" />
         </form>
     </body>
